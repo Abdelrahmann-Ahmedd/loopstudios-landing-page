@@ -1,0 +1,324 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+</style> */
+
+
+* {
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+p {
+    color: hsl(0, 0%, 55%);
+}
+
+.homeSection {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    padding: 0px 15%;
+}
+
+.homeLayer {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    width: 100%;
+    height: 180px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15%;
+}
+
+.leftSide {
+    width: 25%;
+}
+
+.rightSide {
+    width: 35%;
+}
+
+.rightSide ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+ul li:hover::after  {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.homeContent {
+    width: 100%;
+    height: calc(90vh - 300px);
+    padding:0px 15% ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contentBox {
+    width: 55%;
+    padding: 45px 25px 30px ; 
+    /* height: 85%; */
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 65px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.sideSection {
+    width: 100%;
+    margin: 130px 0px;
+    padding: 0px 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sideSection .sideImg {
+    width: 65%;
+}
+
+.sideSection .sideImg img {
+    width: 100%;
+}
+
+.sideSection .sideContent {
+    width: 35%;
+    padding: 80px 50px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 180px;
+    right: 200px;
+}
+
+.sideSection h2 {
+    margin-bottom: 30px;
+}
+
+h2 , h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.catalogueSection {
+    padding: 0px 15%;
+    margin-bottom: 130px;
+}
+
+.catalogueSection .catalogueHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catalogueSection .catalogueHead button {
+    padding: 10px 50px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.catalogueSection .catalogueHead button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.catalogueSection .catalogueContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.catalogueSection .catalogueContent .card {
+    width: 24.29%;
+    color: white;
+    height: 400px;
+    position: relative;
+}
+
+.card h3 {
+    font-size: 48px;
+}
+
+.card .cardLayer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .cardLayer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: 0.3s;
+}
+
+.catalogueSection .catalogueContent .card:nth-child(1) {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(2) {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(3) {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(4) {
+    background-image: url("../images/desktop/image-grid.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(5) {
+    background-image: url("../images/desktop/image-from-above.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(6) {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(7) {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+}
+
+.catalogueSection .catalogueContent .card:nth-child(8) {
+    background-image: url("../images/desktop/image-fisheye.jpg");
+}
+
+footer {
+    width: 100%;
+    padding: 2% 15%;
+    background-color: black;
+}
+
+footer .upperSide {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .upperSide img {
+    width: 20%;
+}
+
+footer .icons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+footer .upperSide .icons div {
+    width: 12%;
+    position: relative;
+}
+
+footer .upperSide .icons img {
+    width: 100%;
+    position: relative;
+}
+
+footer .icons div:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+
+
+footer .lowerSide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+footer .lowerSide .links {
+    width: 30%;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .lowerSide p {
+    color: white;
+}
+
+footer p {
+    color:hsl(0, 0%, 41%) ;
+}
