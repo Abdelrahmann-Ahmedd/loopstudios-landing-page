@@ -20,6 +20,10 @@
     font-size: 15px;
 }
 
+html , body {
+    scroll-behavior: smooth;
+}
+
 p {
     color: hsl(0, 0%, 55%);
 }

@@ -22,7 +22,21 @@
     }
 
     nav .rightSide ul {
-        display: none;
+        height: 90%;
+        position: absolute;
+        top: 12%;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+
+
+
+    nav .rightSide ul li {
+        width: 100%;
     }
 
     nav .menuIcon {
@@ -30,6 +44,14 @@
         width: 20%;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .dark {
+        background-color: black;
     }
 
     .homeContent {
